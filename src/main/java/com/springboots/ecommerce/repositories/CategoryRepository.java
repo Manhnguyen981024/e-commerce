@@ -1,6 +1,6 @@
 package com.springboots.ecommerce.repositories;
 
-import com.springboots.ecommerce.model.Category;
+import com.springboots.ecommerce.entities.Category;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

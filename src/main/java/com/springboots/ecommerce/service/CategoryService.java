@@ -1,16 +1,18 @@
 package com.springboots.ecommerce.service;
 
-import com.springboots.ecommerce.model.Category;
+import com.springboots.ecommerce.entities.Category;
+import com.springboots.ecommerce.model.CategoryDTO;
+import com.springboots.ecommerce.model.CategoryResponse;
 
 import java.util.List;
 
 public interface CategoryService {
 
-    List<Category> getAllCategories();
+    CategoryResponse getAllCategories(Integer pageNumber, Integer pageSize);
 
-    void addCategory(Category category);
+    CategoryDTO addCategory(CategoryDTO categoryDTO);
 
-    String deleteCategory(long id);
+    CategoryDTO deleteCategory(long id);
 
-    String updateCategory(long categoryId, Category category);
+    CategoryDTO updateCategory(long categoryId, CategoryDTO categoryDTO);
 }
